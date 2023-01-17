@@ -1,0 +1,77 @@
+@media screen and (max-width:600px){
+    body,
+    main{
+        flex-direction: column;
+        margin-bottom: 20px;
+        overflow-x: hidden;
+    }
+
+    .cartoes{
+        height: 40vh;
+        width: 100vw;
+        background-image: url("../images/bg-main-mobile.png");
+        gap: 0px;
+        
+    }
+
+    .frente-do-cartao{
+        margin: 0px 0px -310px -50px;
+        position: relative;
+    }
+    .atras-do-cartao{
+        margin: 0px 0px -100px 50px;
+    }
+
+    .frente-do-cartao,
+    .atras-do-cartao{
+        background-size: cover;
+        width: 330px;
+        height: 200px;
+    }
+
+    .frente-do-cartao img{
+        width: 70px;
+    }
+
+    .frente-do-cartao > .informacoes > .numeros-cartao h1{
+        font-size: 12pt;
+    }
+
+    .coleta-de-informacoes{
+        margin: 150px 0px 0px 20px;
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .coleta-de-informacoes input{
+        width: 320px;
+    }
+
+    .input-data input{
+        width: 60px;
+    }
+
+    .input-cvc,
+    .text-cvc{
+        margin-left: -35px;
+    }
+
+    .input-cvc input{
+        width: 145px;
+    }
+
+    .botao-confimar button{
+        width: 335px;
+    }
+
+    .completo{
+        margin-top: -20px;
+    }
+
+    .completo img{
+        width: 80px;
+    }
+    .completo p{
+        font-size: 10pt;
+    }
+}
