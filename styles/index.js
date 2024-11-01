@@ -24,11 +24,22 @@ function digitarNumber(){
         document.getElementById('numero-input').style.border = '1px rgba(0, 0, 0, 0.496) solid'
     }
 
-    if(String(numero.value).length > 0 && String(numero.value).replaceAll(' ', '').length % 4 == 0){
-        numero.value += " "
-    }
+    let num = "";
+    let cont = 0;
+    
+    Array.from(numero.value).forEach(n => {
+        cont++;
+        num += n;
+        if(cont == 4){
+            num += " ";
+            console.log("ue")
+            cont = 0;
+        }
+    });
 
-    document.getElementById('numeros').innerHTML = numero.value
+    if(num){
+        document.getElementById('numeros').innerHTML = num;
+    }
     
     function isNumber(n){
         return !isNaN(parseFloat(n)) && isFinite(n);
@@ -81,12 +92,4 @@ function digitarCvc(){
     }
     document.getElementById('cvc').innerHTML = String(cvc.value).toUpperCase()
 
-}
-
-
-function button(){
-    if((nome.value != "" && numero.value != "" && mes.value != "" && ano.value != "" && cvc.value != "") && (document.querySelector('h2#h2numero').firstChild == null)){
-        document.getElementsByClassName('preencher')[0].style.visibility = 'collapse'
-        document.getElementsByClassName('completo')[0].style.visibility = 'visible'
-    }
 }
