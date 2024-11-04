@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive card details form</title>
+    <title>Formulário de detalhes do cartão interativo</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/mobile.css">
 </head>
@@ -21,7 +21,7 @@
                         <h1 id="numeros">0000 0000 0000 0000</h1>
                     </div>
                     <div class="nome-cartao">
-                        <p id="nome">JANE APPLESEED</p>
+                        <p id="nome">ADENILSON DOS SANTOS</p>
                         <p id="data"><span id="mes">00</span>/<span id="ano">00</span></p>
                     </div>
                 </div>
@@ -33,15 +33,15 @@
         <form class="coleta-de-informacoes" method="POST" action="./redirect.php">
             <div class="preencher">
                 <div class="inserir-nome-cartao">
-                    <p>CARDHOLDER NAME</p>
-                    <input required type="text" placeholder="e.g. Jane Appleseed" name="name" id="nome-input" onkeyup="digitarNome()">
+                    <p>NOME DO TITULAR</p>
+                    <input required type="text" placeholder="ex: ADENILSON DOS SANTOS" name="name" id="nome-input" onkeyup="digitarNome()">
                 </div>
                 <div class="erro">
                     <h2 id="h2nome"></h2>
                 </div>
                 <div class="inserir-numeros-cartao">
-                    <p>CARD NUMBER</p>
-                    <input required type="text" placeholder="e.g. 1234 5678 9123 4567" name="number" id="numero-input" maxlength="16" onkeyup="digitarNumber()">
+                    <p>NUMERO DO CARTÃO</p>
+                    <input required type="text" placeholder="ex: 1234 5678 9123 4567" name="number" id="numero-input" maxlength="16" onkeyup="digitarNumber()">
                 </div>
                 <div class="erro">
                     <h2 id="h2numero"></h2>
@@ -50,11 +50,11 @@
                     <div class="exp-date">
                         <div class="data">
                             <div class="text cartao">
-                                <p>EXP. DATE (MM/YY)</p>
+                                <p>DATA (MM/AA)</p>
                             </div>
                             <div class="input-data">
                                 <input name="month" required type="number" placeholder="MM" id="mes-input" max="12" onkeyup="digitarData()">
-                                <input name="year" required type="number" placeholder="YY" id="ano-input" onkeyup="digitarDataAno()">
+                                <input name="year" required type="number" placeholder="AA" id="ano-input" onkeyup="digitarDataAno()">
                             </div>
                             <div class="erro">
                                 <h2 id="h2data"></h2>
@@ -66,7 +66,7 @@
                                 <p>CVC</p>
                             </div>
                             <div class="input-cvc">
-                                <input required type="text" placeholder="e.g 123" name="cvc" id="cvc-input" onkeyup="digitarCvc()">
+                                <input required type="text" placeholder="ex: 123" name="cvc" id="cvc-input" onkeyup="digitarCvc()">
                             </div>
                             <div class="erro">
                                 <h2 id="h2cvc"></h2>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="botao-confimar">
-                        <button type="submit">Confirm</button>
+                        <button type="submit">Confirmar</button>
                     </div>
                 </div>
             </div>

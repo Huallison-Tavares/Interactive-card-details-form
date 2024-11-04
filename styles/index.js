@@ -6,7 +6,7 @@ const cvc = document.getElementById('cvc-input')
 
 function digitarNome(){
     if(nome.value == ""){
-        document.getElementById("h2nome").innerHTML = 'Can`t be blank'
+        document.getElementById("h2nome").innerHTML = 'Não pode ficar em branco'
         document.getElementById('nome-input').style.border = '1px red solid'
     }else{
         document.getElementById("h2nome").innerHTML = ''
@@ -17,7 +17,7 @@ function digitarNome(){
 
 function digitarNumber(){
     if(numero.value == ""){
-        document.getElementById("h2numero").innerHTML = 'Can`t be blank'
+        document.getElementById("h2numero").innerHTML = 'Não pode ficar em branco'
         document.getElementById('numero-input').style.border = '1px red solid'
     }else{
         document.getElementById("h2numero").innerHTML = ''
@@ -32,7 +32,6 @@ function digitarNumber(){
         num += n;
         if(cont == 4){
             num += " ";
-            console.log("ue")
             cont = 0;
         }
     });
@@ -47,9 +46,9 @@ function digitarNumber(){
 
     if(!(isNumber((numero.value).replaceAll(' ', '')))){
         if(numero.value === ''){
-            document.getElementById("h2numero").innerHTML = 'Can`t be blank'
+            document.getElementById("h2numero").innerHTML = 'Não pode ficar em branco'
         }else{
-        document.getElementById("h2numero").innerHTML = 'Wrong format, number only'
+        document.getElementById("h2numero").innerHTML = 'Formato errado, apenas número'
         document.getElementById('numero-input').style.border = '1px red solid'
 
     }}
@@ -57,7 +56,7 @@ function digitarNumber(){
 
 function digitarData(){
     if(mes.value == ""){
-        document.getElementById("h2data").innerHTML = 'Can`t be blank'
+        document.getElementById("h2data").innerHTML = 'Não pode ficar em branco'
         document.getElementById('mes-input').style.border = '1px red solid'
     }else{
         document.getElementById("h2data").innerHTML = ''
@@ -68,7 +67,7 @@ function digitarData(){
 }
 function digitarDataAno(){
     if(ano.value == ""){
-        document.getElementById("h2data").innerHTML = 'Can`t be blank'
+        document.getElementById("h2data").innerHTML = 'Não pode ficar em branco'
         document.getElementById('ano-input').style.border = '1px red solid'
 
     }else{
@@ -82,7 +81,7 @@ function digitarDataAno(){
 
 function digitarCvc(){
     if(cvc.value == ""){
-        document.getElementById("h2cvc").innerHTML = 'Can`t be blank'
+        document.getElementById("h2cvc").innerHTML = 'Não pode ficar em branco'
         document.getElementById('cvc-input').style.border = '1px red solid'
 
     }else{

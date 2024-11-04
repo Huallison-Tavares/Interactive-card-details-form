@@ -12,8 +12,8 @@
     <main style="display: flex;justify-content:center;align-items:center;">
         <div class="completo">
             <img src="images/icon-complete.svg" alt="">
-            <h1>THANK YOU</h1>
-            <p>We've added your card details</p>
+            <h1>Obrigado</h1>
+            <p>Adicionamos os detalhes do seu cartão</p>
         </div>
     </main>
 
